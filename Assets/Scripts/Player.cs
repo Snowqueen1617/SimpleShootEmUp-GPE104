@@ -47,4 +47,21 @@ public class Player : MonoBehaviour
             tf.Rotate(0, 0, -turnSpeed * Time.deltaTime);
         }
     }
+
+    void OnCollisionEnter2D(Collision2D otherObject)
+    {
+        //If the player runs into something, they should die
+        Die();
+    }
+
+    void Die()
+    {
+        //TODO: Write death code here
+        Destroy(this.gameObject);
+    }
+
+    void OnDestroy()
+    {
+        GameManager.instance.player = null;
+    }
 }
