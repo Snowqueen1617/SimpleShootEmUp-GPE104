@@ -9,6 +9,9 @@ public class Player : MonoBehaviour
     private Transform tf;
     public float turnSpeed = 100f; //Degrees per second
     public float moveSpeed = 5f; // Units per second
+    public GameObject bulletPrefab;
+    public float bulletSpeed = 8f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +36,10 @@ public class Player : MonoBehaviour
     public void Shoot()
     {
         //TODO: Implement Shooting
-        UnityEngine.Debug.Log("Shooting not implemented yet");
+        //UnityEngine.Debug.Log("Shooting not implemented yet");
+        GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+        bullet.GetComponent<Bullet>().bulletSpeed = bulletSpeed;
+        Destroy(bullet, 4);
     }
 
     public void HandleRotation()

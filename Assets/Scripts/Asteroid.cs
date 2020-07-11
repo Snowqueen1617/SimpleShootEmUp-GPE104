@@ -1,20 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    private Transform tf; // A variable to hold our Transform component
-    void Start()
+    private Vector3 directionToMove;
+    private Vector3 targetPosition;
+    public float moveSpeed = 3f;
+
+    private void onDestroy()
     {
-        // Get the Transform Component
-        tf = GetComponent<Transform>();
+        GameManager.instance.enemyList.Remove(this.gameObject);
     }
-    void Update()
+
+    private void Start()
     {
-        // Move up every frame draw by adding 1 to the y of our position
-        tf.position = tf.position + ((Vector3.down * Time.deltaTime) * 3f);
+        GameManager.instance.enemyList.Add(this.gameObject);
+        directionToMove = GameManager.instance.player.transform.position - transform.position;
+        directionToMove.Normalize();
+        //targetPosition = GameManager.instance.player.transform.position - transform.position;
+    }
+    private void Update()
+    {
+        transform.position += directionToMove * moveSpeed * Time.deltaTime;
+        //transform.position = Vector3.MoveTowards(transform.position, GameManager.instance.player.transform.position, moveSpeed * Time.deltaTime);
+        //transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        //transform.position = Vector3.Lerp(transform.position, targetPosition, 0.001f);
     }
 
     private void OnCollisionEnter2D(Collision2D otherObject)
