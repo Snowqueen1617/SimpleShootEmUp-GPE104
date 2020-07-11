@@ -597,4 +597,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/SnowQueen/Documents/OldFlashdrive/UAT/GameProgramming104/SSEU-BUILD/SimpleShootEmUp.exe
+  playerPath: C:/Users/SnowQueen/Documents/OldFlashdrive/UAT/GameProgramming104/SimpleShootEmUp-GPE104/SimpleShootEmUp.exe
