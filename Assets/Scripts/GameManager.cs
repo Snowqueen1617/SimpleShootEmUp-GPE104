@@ -67,7 +67,10 @@ public class GameManager : MonoBehaviour
 
         if(player == null)
         {
-            RespawnPlayer();
+            if (Input.anyKeyDown)
+            {
+                RespawnPlayer();
+            }
         }
     }
 

@@ -63,7 +63,9 @@ public class Player : MonoBehaviour
     void Die()
     {
         //TODO: Write death code here
+        Debug.Log("Player Died");
         Destroy(this.gameObject);
+        
     }
 
     void OnDestroy()

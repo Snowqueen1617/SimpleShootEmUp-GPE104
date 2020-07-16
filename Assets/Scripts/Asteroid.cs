@@ -10,7 +10,7 @@ public class Asteroid : MonoBehaviour
     private Vector3 targetPosition;
     public float moveSpeed = 3f;
 
-    private void onDestroy()
+    private void OnDestroy()
     {
         GameManager.instance.enemyList.Remove(this.gameObject);
     }
@@ -28,6 +28,11 @@ public class Asteroid : MonoBehaviour
         //transform.position = Vector3.MoveTowards(transform.position, GameManager.instance.player.transform.position, moveSpeed * Time.deltaTime);
         //transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
         //transform.position = Vector3.Lerp(transform.position, targetPosition, 0.001f);
+
+        if (GameManager.instance.player == null)
+        {
+            Destroy(this.gameObject);
+        }    
     }
 
     private void OnCollisionEnter2D(Collision2D otherObject)

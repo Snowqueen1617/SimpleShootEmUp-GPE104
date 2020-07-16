@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8224880413233627462}
   - component: {fileID: -7345792232861267657}
   - component: {fileID: -3439815974925399259}
-  - component: {fileID: -1377332355259924506}
+  - component: {fileID: -4344111577332855854}
   m_Layer: 0
   m_Name: ufoRed
   m_TagString: Untagged
@@ -121,7 +121,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-1377332355259924506
+--- !u!114 &-4344111577332855854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6064839620125895003}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dd90426290960142ae75b1d7ccda49d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ede501b13296b147b5d196bc53490f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.5
+  enemySpeed: 2
