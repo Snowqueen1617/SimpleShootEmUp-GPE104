@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6786222061459333875}
   - component: {fileID: 6786222061459333872}
   - component: {fileID: 6786222061459333873}
+  - component: {fileID: 2372153261095998112}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -176,3 +177,17 @@ PolygonCollider2D:
       - {x: 0.4969356, y: -0.30418253}
       - {x: 0.50040364, y: -0.22010444}
       - {x: 0.11454715, y: 0.22918825}
+--- !u!114 &2372153261095998112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6786222061459333879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9dc9417c368b3e4cb87063cefd6ddc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  Pew: {fileID: 8300000, guid: 6dd23efac7814ed45b28c7a974fd1ac7, type: 3}
