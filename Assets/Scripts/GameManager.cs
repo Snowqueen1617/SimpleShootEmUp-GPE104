@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using UnityEngine;
 
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -16,7 +17,7 @@ public class GameManager : MonoBehaviour
     public float spawnDistance;
     public GameObject playerPrefab;
 
-    void Awake() //happens before start function
+   void Awake() //happens before start function
     {
         if(instance == null) //if nothing has been assigned to instance yet, assign
         {
@@ -72,6 +73,7 @@ public class GameManager : MonoBehaviour
                 RespawnPlayer();
             }
         }
+
     }
 
     private void RespawnPlayer()
@@ -95,4 +97,5 @@ public class GameManager : MonoBehaviour
             Destroy(enemy);
         }
     }
+
 }
