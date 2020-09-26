@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
     
     private void SpawnEnemy()
     {
-        //TODO: Not yet fully implemented
+        
         //Pick a random enemy to spawn
         GameObject enemyToSpawn = enemyPrefabList[UnityEngine.Random.Range(0, enemyPrefabList.Count)];
 

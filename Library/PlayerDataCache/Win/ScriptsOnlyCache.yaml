@@ -64,24 +64,36 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 11170}
+    - Class: 114
       Script: {instanceID: 11238}
+    - Class: 114
+      Script: {instanceID: 11462}
+    - Class: 114
+      Script: {instanceID: 12176}
     - Class: 114
       Script: {instanceID: 12424}
     - Class: 114
       Script: {instanceID: 12476}
     - Class: 114
-      Script: {instanceID: 12602}
+      Script: {instanceID: 12584}
     - Class: 114
-      Script: {instanceID: 12732}
+      Script: {instanceID: 12604}
     - Class: 114
-      Script: {instanceID: 12980}
+      Script: {instanceID: 12734}
     - Class: 114
-      Script: {instanceID: 13044}
+      Script: {instanceID: 12982}
     - Class: 114
-      Script: {instanceID: 13388}
+      Script: {instanceID: 13046}
     - Class: 114
-      Script: {instanceID: 14730}
+      Script: {instanceID: 13390}
+    - Class: 114
+      Script: {instanceID: 13646}
+    - Class: 114
+      Script: {instanceID: 14256}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -90,6 +102,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Title.unity:
     - Class: 1
@@ -121,11 +139,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12176}
     - Class: 114
-      Script: {instanceID: 13644}
+      Script: {instanceID: 12584}
     - Class: 114
-      Script: {instanceID: 14254}
+      Script: {instanceID: 13646}
     - Class: 114
-      Script: {instanceID: 14730}
+      Script: {instanceID: 14256}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -417,6 +435,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 47f19bbf9fc0880f158c6f0a733fca65
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
       Hash: e016fd4184e5994bc69de8fb37c8d1a1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -679,12 +703,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 47f19bbf9fc0880f158c6f0a733fca65
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AudioManager
   platform: 5
   scenePathNames:
   - Assets/Scenes/Title.unity

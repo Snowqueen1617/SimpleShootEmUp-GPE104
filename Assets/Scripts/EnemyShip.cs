@@ -12,7 +12,7 @@ public class EnemyShip : MonoBehaviour
     private void OnDestroy()
     {
         GameManager.instance.enemyList.Remove(this.gameObject);
-        //GameManager.instance.score += 10; 
+ 
     }
 
     void Start()

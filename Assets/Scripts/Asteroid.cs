@@ -7,7 +7,7 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour
 {
     private Vector3 directionToMove;
-    private Vector3 targetPosition;
+    //private Vector3 targetPosition;
     public float moveSpeed = 3f;
 
     private void OnDestroy()
